@@ -1,0 +1,167 @@
+// SPDX-License-Identifier: PMPL-1.0-or-later
+// Copyright (c) 2026 Jonathan D.A. Jewell (hyperpolymath) <j.d.a.jewell@open.ac.uk>
+= Methodologies
+:private: true
+:toc: preamble
+
+Captured design decisions, learnings, and methodologies from AI-assisted
+software development across the hyperpolymath ecosystem.
+
+== Purpose
+
+This repo is the **canonical home** for process knowledge that transcends
+individual projects. When a pattern is discovered, validated, and refined
+across multiple sessions, it lives here — not scattered across memory files
+or buried in project docs/ directories.
+
+== Contents
+
+[cols="1,3"]
+|===
+| Directory | Description
+
+| `methodologies/productive-meandering/`
+| Productive Meandering v3 — maximal traversal task execution with weighted
+  priorities, wave discipline, spike requirement, and self-termination.
+  Field-tested across 6 sessions.
+
+| `methodologies/tsdm/`
+| Triaxial Software Development Methodology — Scope → Maintenance → Audit.
+  The systematic counterpart to meandering.
+
+| `methodologies/parallel-audit/`
+| Parallel audit methodology — sending multiple agents to audit the same
+  repo from different angles with exclusive scoping.
+
+| `methodologies/multi-agent-coordination/`
+| Multi-agent coordination patterns — workspace locking, task sharing,
+  conflict prevention, alternating passes.
+
+| `methodologies/resource-management/`
+| Resource guardrails — token budgets, disk/RAM limits, build staggering,
+  artifact cleanup. Learned the hard way.
+
+| `methodologies/rsr/`
+| Rhodium Standard Repositories — the template-based repo methodology itself,
+  treated as a methodology for consideration and refinement.
+
+| `methodologies/event-chain-critical-chain/`
+| Event Chain Methodology + Critical Chain (Theory of Constraints). Focuses
+  agent work on the actual constraint — the bottleneck that limits throughput.
+  Subordination rule: non-constraint work is waste.
+
+| `methodologies/hypatia-feedback-loop/`
+| Automated methodology learning via Hypatia's neurosymbolic CI/CD loop.
+  Bayesian confidence updating, pattern promotion, neural coordination.
+  Closes the loop between methodology execution and methodology improvement.
+
+| `methodologies/git-cycle/`
+| Full git cycle: commit + .gitignore + push + mirror in one pass.
+
+| `methodologies/pre-commit-gate/`
+| panic-attack assail before every commit across all repos.
+
+| `methodologies/proven-first-resolution/`
+| Check proven repo for formally verified alternatives before manual fixes.
+
+| `methodologies/spec-exhaustive-search/`
+| Multi-extension search before claiming a spec file doesn't exist.
+
+| `methodologies/contractile-lifecycle/`
+| Five contractile files per repo (Mustfile, Trustfile, Dustfile, Intentfile, K9).
+
+| `methodologies/language-repo-taxonomy/`
+| 14-section naming convention for language repos from spec to deployment.
+
+| `methodologies/breadth-first-engineering/`
+| Work across all languages in sweeps by layer, not one language at a time.
+
+| `methodologies/floor-raise-campaign/`
+| Audit repos for missing standards, generate dispatch manifests, run fixes.
+
+| `methodologies/ecosystem-surface-campaign/`
+| 14-touchpoint playbook for maximising exposure of new formats and tools.
+
+| `methodologies/visibility-triad/`
+| Four coordinated campaigns: claim-forge + avatar-foundry + git-seo + palimpsest-plasma.
+
+| `methodologies/cross-project-propagation/`
+| After building a pattern, document which other projects should adopt it.
+
+| `methodologies/traversal-mode-selection/`
+| Ask depth-first / breadth-first / no-stubbing before large multi-file work.
+
+| `methodologies/explainme-standard/`
+| EXPLAINME.adoc: show-me-the-receipts file backing README claims.
+
+| `methodologies/v-api-quality-gate/`
+| Seven-category checklist for V-lang implementations before awesome-v.
+
+| `methodologies/panel-harness-autowiring/`
+| panels/manifest.json schema for PanLL auto-discovery and health probing.
+
+| `methodologies/verisimdb-instance-policy/`
+| Every project gets its own VeriSimDB instance with unique port and volume.
+
+| `methodologies/repo-enrollment/`
+| Three-tier: git-private-farm → Hypatia scanning → gitbot-fleet.
+
+| `methodologies/topology-standard/`
+| ASCII architecture diagram + completion dashboard per repo.
+
+| `methodologies/session-design-document/`
+| Dated design document at session start for cross-AI knowledge transfer.
+
+| `methodologies/external-link-crosscheck/`
+| Check open PRs and submissions before archiving or reorganising repos.
+
+| `decisions/`
+| Architecture Decision Records (ADRs) for methodology choices.
+
+| `field-reports/`
+| Session field reports — honest assessments of what worked, what failed,
+  and why. The raw data behind methodology refinements.
+|===
+
+== How to Use
+
+. When starting a new project or session, check if a methodology here applies
+. Follow the methodology's instructions (designed to be copy-pasted
+  into CLAUDE.md or used as session instructions)
+. After the session, write a field report if you learned something new
+. Update the methodology if the field report reveals a gap
+
+== Status
+
+[options="header"]
+|===
+| Methodology | Version | Field Tests | Status
+
+| Productive Meandering | v3 | 6 | Active, refined
+| TSDM | v1 | 20+ | Active, stable
+| Event Chain + Critical Chain | v1 | 1 (retro) | Active, new
+| Hypatia Feedback Loop | v1 | — | Active, connecting
+| Parallel Audit | v2 | 3 | Active, needs v3
+| Multi-Agent Coordination | v0 | 2 | Design phase
+| Resource Management | v1 | 5+ | Active, stable
+| RSR | v1 | 500+ repos | Active, stable
+| Contractile Lifecycle | v1 | 100+ repos | Active, stable
+| Breadth-First Engineering | v1 | 14 languages | Active, stable
+| 16 others | v0-v1 | various | Stub — to be expanded
+|===
+
+== Key Insight
+
+These methodologies are not competitors — they're tools for different situations:
+
+* *TSDM* when you need guaranteed systematic coverage
+* *Productive Meandering* when you need serendipitous discovery
+* *Event Chain + Critical Chain* when you need to identify and work the constraint
+* *Hybrid (audit-then-focus)* for most real sessions (default)
+* *Three-Agent Architecture* (proposed) for complex projects needing both
+  convergent and divergent work simultaneously
+* *Parallel Audit* for pre-milestone comprehensive review
+* *RSR* as the structural standard that all repos follow
+
+The art is knowing when to switch between them, and the field reports
+are how we learn which works when.

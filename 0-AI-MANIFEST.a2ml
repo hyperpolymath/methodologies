@@ -1,0 +1,34 @@
+# SPDX-License-Identifier: PMPL-1.0-or-later
+# 0-AI-MANIFEST.a2ml — AI Agent Entry Point
+# Copyright (c) 2026 Jonathan D.A. Jewell (hyperpolymath)
+
+# STOP — READ THIS FIRST
+
+# This is the AI manifest for the **methodologies** repository.
+# It is a PRIVATE repo containing captured design decisions, learnings,
+# and methodologies from AI-assisted software development.
+
+# CANONICAL LOCATIONS
+# - Methodologies: methodologies/<name>/README.md
+# - Field reports: field-reports/<date>-<name>.md
+# - Architecture decisions: decisions/ADR-<number>-<name>.md
+# - This is a DOCS repo — no src/, no build artifacts, no containers
+
+# CRITICAL INVARIANTS
+# 1. This repo is PRIVATE on all three forges (GitHub, GitLab, Bitbucket)
+# 2. NEVER publish methodology content externally without user permission
+# 3. Field reports contain honest assessments — do not sanitise them
+# 4. Productive Meandering canonical source is HERE, not gossamer/docs/
+# 5. TSDM source a2ml is HERE, not Zotero
+# 6. All methodology docs use SPDX-License-Identifier: PMPL-1.0-or-later
+
+# STRUCTURE
+# methodologies/           — 26 methodology directories
+# field-reports/           — honest session assessments
+# decisions/               — ADRs for methodology choices
+# .github/workflows/       — RSR standard workflows
+
+# RELATIONSHIP TO OTHER REPOS
+# - gossamer/docs/ has a COPY of productive-meandering (keep in sync or remove)
+# - hypatia/ has the automated learning loop that consumes methodology outcomes
+# - All repos consume these methodologies via CLAUDE.md instructions
