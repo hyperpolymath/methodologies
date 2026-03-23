@@ -375,6 +375,52 @@ but dangerous for creative/research work.
 - A language with 44 locked design decisions should get more decisions, not workarounds
 - Invert the budget: 70% on the project's unique strength, 30% on everything else
 
+**Divergent Invariant Preservation (CRITICAL):**
+
+"Amplify uniqueness" means **deepen**, not **broaden**. Divergent mode
+must respect the project's architectural constraints even while pushing
+its strengths. The invariants are the riverbanks — diverge within them,
+not across them.
+
+Before doing ANY work in divergent mode, read:
+1. The AI manifest (0-AI-MANIFEST.a2ml) for critical invariants
+2. CLAUDE.md for project-specific rules
+3. The language/architecture policy
+
+**What divergent mode DOES:**
+- A project with 699 Idris2 proofs gets *deeper* Idris2 proofs
+- A project with a novel type system gets *richer* type theory
+- A project with a unique algorithm gets *better* performance analysis
+
+**What divergent mode DOES NOT do:**
+- Add proofs in Lean4/Coq/Agda to an Idris2-only project
+- Add a second language "because it's interesting"
+- Broaden the tech stack "to explore alternatives"
+- Introduce patterns from other projects that don't fit this one's model
+
+**The broadening trap:** A bot told to "amplify uniqueness" in a formal
+verification repo might think "formal verification is cool, let me add
+Lean4 proofs too!" This is catastrophically wrong — it dilutes the
+project, adds maintenance burden, and violates the single-language
+invariant. The correct divergent action is to make the *existing* Idris2
+proofs deeper, more complete, or more elegant.
+
+**Test:** Before adding anything in divergent mode, ask:
+"Does this deepen the existing strength, or does it add a parallel
+strength?" If parallel → stop. Note it as a cross-project insight.
+Only deepen.
+
+**Example:**
+- `proven` repo (699 Idris2 files, zero believe_me):
+  - CORRECT divergent: prove harder theorems, fill proof gaps, improve
+    proof ergonomics, add dependent-type techniques not yet used
+  - WRONG divergent: add Lean4 translations, add Coq versions, "port
+    the proofs to Agda for comparison"
+- Ephapax compiler (linear types, Rust):
+  - CORRECT divergent: deepen the linearity checker, prove more properties,
+    add region inference refinements
+  - WRONG divergent: add a Haskell backend, "try rewriting in OCaml"
+
 **How to choose:**
 - If the user says "get this up to spec" / "fix" / "convert" / "complete" → convergent
 - If the user says "develop" / "explore" / "push" / "what makes this special" → divergent
@@ -905,3 +951,14 @@ Same session, after user asked "are we at risk of never arriving?":
     found, (d) difficulty-impact classification of remaining work,
     (e) recommended focus for next session. This forces honest accounting
     of what the meander chose NOT to do.
+
+**v5 refinement (2026-03-23, divergent safety):**
+24. **Divergent Invariant Preservation** — "amplify uniqueness" means
+    deepen, not broaden. Before any divergent work, read the AI manifest
+    and CLAUDE.md for invariants. Diverge within the riverbanks, not
+    across them. Test: "Does this deepen the existing strength, or add
+    a parallel strength?" If parallel → stop. The broadening trap
+    (adding Lean4 proofs to an Idris2-only repo, adding a Haskell
+    backend to a Rust compiler) is the divergent equivalent of
+    convergent's over-polishing — it feels productive but violates
+    the project's architectural identity.
