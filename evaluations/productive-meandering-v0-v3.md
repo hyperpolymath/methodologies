@@ -71,21 +71,46 @@ making this a genuine A/B comparison. v0 and v1 data is from prior sessions.
 | **Completion guarantee** | Yes (trivially) | No (random walk) | Yes (constraint resolution = done) |
 | **Right work guarantee** | Only if user knows what's right | No (interesting > important) | Yes (critical chain enforces) |
 
-## Headline Numbers (v2 vs v3)
+## Headline Numbers (v2 vs v3) — FINAL
 
 | Metric | v2 | v3 | Change |
 |--------|----|----|--------|
 | Bots launched | 5 | 2 | **-60%** |
-| Tokens (est.) | 296K | ~170K | **-43%** |
+| Tokens (actual) | 296K | 89K | **-70%** |
+| Tool calls | 159 | 73 | **-54%** |
+| Files touched | 23 | 4 | v2 more output |
 | Critical chain unblocked | accidentally (wave 2) | by design (wave 1) | **1 wave faster** |
-| Components with coverage visibility | 6 | 29 | **+383%** |
+| Components with coverage visibility | 6/29 (21%) | 29/29 (100%) | **+383%** |
+| Skipped MUSTs detected | 0 | 12 (incl. 1 P0, 3 P1) | **v3 found what v2 missed** |
 | Perfective work (waste) | ~30% of effort | 0% | **eliminated** |
 | Constraint identified | never (found by accident) | Phase 0, before any bot launched | **systematic** |
+| Cherry-picking confirmed | yes (by v3 audit) | no (matrix enforced) | **structural fix** |
+| Schema violations fixed | 0 | 7 | **v3 found the real work** |
+
+### What v3 found that v2 missed (skipped MUSTs)
+
+| Priority | Component | Issue |
+|----------|-----------|-------|
+| P0 | session-sentinel | 56 SIGABRTs/4 days, disabled, D-Bus race |
+| P1 | nano-aider | Wrong author email (gmail.com) |
+| P1 | panoptes | MIT license, should be PMPL |
+| P1 | cicada | Stale "Palimpsest v0.4" naming |
+| P2 | total-recall | Uncustomised RSR template placeholder |
+| P2 | total-update | Same — {{PROJECT}} throughout |
+| P2 | reasonably-good-token-vault | Missing Idris2 ABI layer |
+
+### What v2 found that v3 wouldn't have
+
+| Finding | Value |
+|---------|-------|
+| Duplicate observatory in system-tools/ | Structural (prevents future confusion) |
+| Stale Python in stale/ | Cleanup (removes banned code) |
+| TOPOLOGY.md missing 25+ components | Documentation (onboarding) |
+| broad-spectrum is a real ReScript project | Discovery (unknown component found) |
 
 ## Honest Caveats
 
-1. **v3 hasn't fully completed at time of writing** — final numbers may differ.
-   This evaluation will be updated when the v3 bots finish.
+1. **v3 completed and final numbers are in.** Updated 2026-03-23.
 
 2. **v3 benefits from v2's work.** HCT compiles because v2 fixed main.rs. The
    constraint analysis was easier because v2 built the components. v3 on a fresh
