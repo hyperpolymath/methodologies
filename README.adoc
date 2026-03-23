@@ -115,6 +115,10 @@ or buried in project docs/ directories.
 | `methodologies/external-link-crosscheck/`
 | Check open PRs and submissions before archiving or reorganising repos.
 
+| `evaluations/`
+| Quantitative comparisons of methodology effectiveness. 7 dimensions:
+  efficiency, effectiveness, efficacy, economy, elegance, equity, ethics.
+
 | `decisions/`
 | Architecture Decision Records (ADRs) for methodology choices.
 
