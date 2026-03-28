@@ -46,7 +46,7 @@ production incidents — OOM crashes, disk exhaustion, and token waste.
 
 Before launching parallel agents:
 ```bash
-df -h /var/mnt/eclipse    # Check disk (need > 10GB free)
+df -h /var$ECLIPSE_DIR    # Check disk (need > 10GB free)
 free -h                    # Check RAM (need > 10GB available)
 ```
 
@@ -68,5 +68,5 @@ free -h                    # Check RAM (need > 10GB available)
 6. Never 2+ agents building same Rust workspace simultaneously
 7. Stagger builds across agents (each spikes 2-3GB RAM)
 8. Use `model: "haiku"` for simple search/read subagents
-9. Never glob/grep the full `/var/mnt/eclipse/repos/`
+9. Never glob/grep the full `/var$REPOS_DIR/`
 10. Use `limit` on Read for files > 500 lines
