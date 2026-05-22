@@ -1,4 +1,4 @@
-// SPDX-License-Identifier: PMPL-1.0-or-later
+// SPDX-License-Identifier: MPL-2.0
 // Copyright (c) 2026 Jonathan D.A. Jewell (hyperpolymath) <j.d.a.jewell@open.ac.uk>
 = Methodologies
 :private: true
@@ -95,7 +95,7 @@ or buried in project docs/ directories.
 | EXPLAINME.adoc: show-me-the-receipts file backing README claims.
 
 | `methodologies/v-api-quality-gate/`
-| Seven-category checklist for V-lang implementations before awesome-v.
+| Seven-category checklist for zig implementations before awesome-v.
 
 | `methodologies/panel-harness-autowiring/`
 | panels/manifest.json schema for PanLL auto-discovery and health probing.

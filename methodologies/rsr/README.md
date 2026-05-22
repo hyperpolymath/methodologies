@@ -1,4 +1,4 @@
-# SPDX-License-Identifier: PMPL-1.0-or-later
+# SPDX-License-Identifier: MPL-2.0
 # Rhodium Standard Repositories (RSR) — as a Methodology
 
 ## Overview
@@ -18,7 +18,7 @@ understands one RSR repo understands all of them.
 - **Checkpoint files** (STATE.a2ml, META.a2ml, ECOSYSTEM.a2ml in `.machine_readable/`)
 - **Documentation** (README.adoc, EXPLAINME.adoc, SECURITY.md, CONTRIBUTING.md)
 - **Build** (Justfile with standardised recipes)
-- **License** (PMPL-1.0-or-later with MPL-2.0 fallback)
+- **License** (MPL-2.0 with MPL-2.0 fallback)
 - **AI manifest** (0-AI-MANIFEST.a2ml or AI.a2ml)
 - **Author attribution** (Jonathan D.A. Jewell, noreply email for git)
 

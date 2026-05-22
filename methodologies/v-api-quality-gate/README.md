@@ -1,9 +1,9 @@
-# SPDX-License-Identifier: PMPL-1.0-or-later
-# V-lang API Quality Gate
+# SPDX-License-Identifier: MPL-2.0
+# zig API Quality Gate
 
 ## Summary
 
-Seven-category checklist for V-lang implementations before awesome-v submission.
+Seven-category checklist for zig implementations before awesome-v submission.
 
 ## Source
 

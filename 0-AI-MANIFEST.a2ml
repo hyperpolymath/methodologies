@@ -1,4 +1,4 @@
-# SPDX-License-Identifier: PMPL-1.0-or-later
+# SPDX-License-Identifier: MPL-2.0
 # 0-AI-MANIFEST.a2ml — AI Agent Entry Point
 # Copyright (c) 2026 Jonathan D.A. Jewell (hyperpolymath)
 
@@ -20,7 +20,7 @@
 # 3. Field reports contain honest assessments — do not sanitise them
 # 4. Productive Meandering canonical source is HERE, not gossamer/docs/
 # 5. TSDM source a2ml is HERE, not Zotero
-# 6. All methodology docs use SPDX-License-Identifier: PMPL-1.0-or-later
+# 6. All methodology docs use SPDX-License-Identifier: MPL-2.0
 
 # STRUCTURE
 # methodologies/           — 26 methodology directories

@@ -1,4 +1,4 @@
-# SPDX-License-Identifier: PMPL-1.0-or-later
+# SPDX-License-Identifier: MPL-2.0
 # ADR-001: Three-Agent Architecture (Diverge / Converge / TSDM)
 # Status: Proposed
 # Date: 2026-03-23

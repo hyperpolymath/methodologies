@@ -1,4 +1,4 @@
-# SPDX-License-Identifier: PMPL-1.0-or-later
+# SPDX-License-Identifier: MPL-2.0
 # Evaluation: v3 Cross-Project Consistency Test
 # Date: 2026-03-23
 # Projects: ambientops (infra), burble (platform), proven (research)

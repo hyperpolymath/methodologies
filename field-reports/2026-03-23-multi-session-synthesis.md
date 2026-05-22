@@ -1,4 +1,4 @@
-# SPDX-License-Identifier: PMPL-1.0-or-later
+# SPDX-License-Identifier: MPL-2.0
 # Field Report: Multi-Session Synthesis
 # Date: 2026-03-23
 # Sessions: Ambientops, Stapeln x2, OPSM, ECHIDNA
