@@ -1,4 +1,4 @@
-# SPDX-License-Identifier: MPL-2.0
+# SPDX-License-Identifier: CC-BY-SA-4.0
 # Field Report: TSDM + Meander Hybrid Validation (Stapeln)
 # Date: 2026-03-23
 # Methodology: Hybrid TSDM-Meander (first full cycle)
