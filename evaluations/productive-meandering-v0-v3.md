@@ -1,4 +1,4 @@
-# SPDX-License-Identifier: MPL-2.0
+# SPDX-License-Identifier: CC-BY-SA-4.0
 # Evaluation: Productive Meandering v0 → v3
 # Date: 2026-03-23
 # Target: ambientops (same repo, same session, A/B comparison)

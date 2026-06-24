@@ -1,4 +1,4 @@
-# SPDX-License-Identifier: MPL-2.0
+# SPDX-License-Identifier: CC-BY-SA-4.0
 # Field Report: Ambientops Productive Meander
 # Date: 2026-03-23
 # Methodology: Productive Meandering v2 (then self-critiqued to inform v3)
