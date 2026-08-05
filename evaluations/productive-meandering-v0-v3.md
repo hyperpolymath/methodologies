@@ -96,7 +96,7 @@ making this a genuine A/B comparison. v0 and v1 data is from prior sessions.
 | P1 | panoptes | MIT license, should be PMPL |
 | P1 | cicada | Stale "Palimpsest v0.4" naming |
 | P2 | total-recall | Uncustomised RSR template placeholder |
-| P2 | total-update | Same — {{PROJECT}} throughout |
+| P2 | total-update | Same — METHODOLOGIES throughout |
 | P2 | reasonably-good-token-vault | Missing Idris2 ABI layer |
 
 ### What v2 found that v3 wouldn't have

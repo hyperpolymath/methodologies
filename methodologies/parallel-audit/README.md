@@ -44,7 +44,7 @@ vs ~80 for a single pass). Triple-confirmation on critical findings.
 - License inconsistencies (found by all 3 from different angles — high confidence)
 - Stale metadata (TOPOLOGY.md, STATE.a2ml, arXiv papers vs actual proof status)
 - Orphan files (not in module tree)
-- Template variable leaks (`{{OWNER}}` in workflow)
+- Template variable leaks (`hyperpolymath` in workflow)
 - Count accuracy (78 unwraps, not "~35")
 
 ## Validated
