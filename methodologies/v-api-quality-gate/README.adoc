@@ -1,0 +1,17 @@
+== SPDX-License-Identifier: CC-BY-SA-4.0
+
+== zig API Quality Gate
+
+=== Summary
+
+Seven-category checklist for zig implementations before awesome-v
+submission.
+
+=== Source
+
+Memory file: `+v-api-awesome-checklist.md+`
+
+=== Status
+
+Stub — full documentation to be extracted from memory and expanded. See
+the source memory file for current details.

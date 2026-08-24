@@ -1,0 +1,31 @@
+== SPDX-License-Identifier: CC-BY-SA-4.0
+
+== Evaluations
+
+Quantitative and qualitative comparisons of methodology effectiveness.
+Each evaluation uses real session data — not hypothetical projections.
+
+=== Contents
+
+[width="100%",cols="17%,47%,36%",options="header",]
+|===
+|File |What it compares |Data source
+|`+productive-meandering-v0-v3.md+` |Straight-line vs v1 vs v2 vs v3
+|Ambientops A/B test (2026-03-23)
+|===
+
+=== Evaluation Framework
+
+We assess methodologies across 7 dimensions:
+
+[arabic]
+. *Efficiency* — output per token (how much work per unit cost?)
+. *Effectiveness* — did it solve the right problems? (coverage, priority
+alignment)
+. *Efficacy* — did outcomes match intent? (waste ratio, bot accuracy)
+. *Economy* — cost vs value (bots launched, waves needed, perfective
+waste)
+. *Elegance* — how clean is the process? (stopping conditions, coverage
+tracking)
+. *Equity* — fair allocation of effort (maturity bias, cherry-picking)
+. *Ethics* — responsible resource use (builds, tokens, disk, RAM)
