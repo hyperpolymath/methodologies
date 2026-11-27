@@ -45,13 +45,7 @@ updates:
     schedule:
       interval: "weekly"
 
-  # Node.js/npm
-  - package-ecosystem: "npm"
-    directory: "/"
-    multi-ecosystem-group: "js-locks"
-    patterns: ["*"]
-
-  # Bun (bun.lock): in the js-locks group with npm, so one PR moves package.json and bun.lock together
+  # Bun (bun.lock): in the js-locks group, so one PR moves package.json and bun.lock together (no npm entry: no npm lockfile here)
   - package-ecosystem: "bun"
     directory: "/"
     multi-ecosystem-group: "js-locks"
